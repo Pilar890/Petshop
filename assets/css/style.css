@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(246,236,236);
+}
+
+header .logo-div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header .logo{
+    width: 4rem;
+}
+
+header .enlaces{
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .enlaces a{
+    background-color: rgb(27,178,225);
+    color: #efefef;
+    padding: .2rem .5rem;
+    border-radius: 15%;
+    text-decoration: none;
+}
+
+
+/* NAv */
+header>div .navbar {
+    width: 35rem;
+}
+
+header>div .navbar .offcanvas-body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header>div>.navbar .offcanvas-body a {
+    text-decoration: none;
+    color: black;
+    background-color: #efefef;
+    transition: all 1s;
+    padding: .3rem .5rem;
+}
+
+header>div>.navbar .offcanvas-body a:hover {
+    background-color: #cc0026;
+    color: #efefef;
+    transition: all 1s;
+    border-radius: 15px;
+}
+
+header>div>.navbar .offcanvas-body .page {
+    background-color: #cc0026;
+    color: #efefef;
+}
+
+header .navbar button {
+    background-color: #5e4b55;
+}
+
+header .navbar button:hover {
+    background-color: #5e4b55;
+}
+
+footer{
+    background-color: #000;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerMod{
+    display: flex;
+    gap: 60px;   
+}
+.logoFooter{
+    width: 60px;
+}
+
+/*CONTACT*/
+
+.contenedor-padre{
+   background-color: white;
+   border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(167, 232, 232, 0.246);
+}
+.contenedor-form{
+    width: 30rem;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto{
+    width: 60rem;
+    text-align: center;
+}
+section{
+    margin: 3rem;
+}
+.nombre, .apellido, .email, .telefono, .comentario, .select{
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px){
+    header>div .navbar {
+        justify-content: flex-end;
+    }
+
+    header>div .navbar .offcanvas{
+        margin-top: 10vh;
+        width: 15rem;
+        height: 17.5rem;
+    }
+
+    header>div .navbar .offcanvas-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #5e4b55;
+    }
+    header>div .navbar .offcanvas-body a{
+        background-color: #fce1cb;
+        text-align: center;
+        margin: .5rem 0;
+    }
+}
